@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import jline.Completor;
+import jline.console.completer.Completer;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.Validate;
@@ -25,7 +25,7 @@ import org.cyclopsgroup.jcli.spi.ParsingContext;
  * @author <a href="mailto:jiaqi.guo@gmail.com">Jiaqi Guo</a>
  */
 public class CliCompletor
-    implements Completor
+    implements Completer
 {
     private static List<String> filterList( List<String> list, String prefix )
     {
